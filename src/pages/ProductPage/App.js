@@ -13,18 +13,20 @@ import II4 from '../../assets/i4.jpg'
 function App() {
   let images = [II4,II2,II3,II1];
   const [count, setCount] = useState(1);
+  const[adddToCart, setAdddToCart] = useState(false);
+
 
   const addToCart = () => {
     setCount(count + 1);
-    console.log(count);
+    setAdddToCart(true);
   };
 
   return (
     <div>
-       <Header count={count} />
+       <Header count={count} adddToCart={adddToCart} setAdddToCart={setAdddToCart} />
        <div className='row-product-info'>
        <ImageSlider images={images} />
-       <ProductInfo  addToCart={addToCart}/>
+       <ProductInfo addToCart={addToCart}/>
        </div>
 
     </div>
