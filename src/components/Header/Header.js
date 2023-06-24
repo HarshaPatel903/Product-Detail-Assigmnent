@@ -2,6 +2,7 @@ import React, { useState,useEffect } from 'react';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import Person4Icon from '@mui/icons-material/Person4';
 import SearchIcon from '@mui/icons-material/Search';
+import logo from '../../assets/dogncat.jpeg';
 
 import './Header.css';
 
@@ -23,7 +24,7 @@ const Header = ({count, adddToCart, setAdddToCart}) => {
   }, [adddToCart]);
   return (
     <header className="header">
-      <img className="header__logo" alt='' src='https://cdn.shopify.com/s/files/1/0565/8021/0861/files/supertails-logo-for-dark-theme_200x_2x_59a36949-1934-4494-b180-9ff4bcb2cb35_230x.webp?v=1659207740' />
+      <img className="header__logo" alt='' src={logo}/>
       <div className="header__search">
         <input type="text" placeholder="Search" />
         <button className="header__search-icon">
