@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './pages/ProductPage/App.js';
+// import App from './pages/ProductPage/App.js';
+import ProductListingPage from './pages/productListPage/productListPage.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ProductListingPage />
   </React.StrictMode>
 );
 
